@@ -2,13 +2,14 @@
   "name": "toolsdog",
   "version": "0.0.0",
   "scripts": {
-    "serve": "vite --mode development",
+    "dev": "vite --mode development",
     "build": "vite build --mode production",
     "preview": "vite preview --port 4173",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore"
   },
   "dependencies": {
     "@vueuse/core": "^9.13.0",
+    "autofit.js": "^3.1.0",
     "pinia": "^2.1.7",
     "vue": "^3.4.27",
     "vue-router": "^4.3.2"
@@ -20,16 +21,20 @@
     "@unocss/preset-attributify": "^0.45.30",
     "@unocss/preset-uno": "^0.45.30",
     "@unocss/transformer-directives": "^0.45.30",
+    "@vicons/ionicons5": "^0.12.0",
     "@vitejs/plugin-vue": "^3.2.0",
     "@vue/eslint-config-prettier": "^7.1.0",
     "cross-env": "^7.0.3",
     "eslint": "^8.57.0",
     "eslint-plugin-vue": "^9.26.0",
+    "naive-ui": "^2.38.2",
     "prettier": "^2.8.8",
+    "sass": "^1.77.3",
     "unocss": "^0.45.30",
     "unplugin-auto-import": "^0.11.5",
     "unplugin-icons": "^0.14.15",
     "unplugin-vue-components": "^0.22.12",
+    "vfonts": "^0.0.3",
     "vite": "^3.2.10"
   }
 }

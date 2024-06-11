@@ -13,6 +13,7 @@ import Components from 'unplugin-vue-components/vite'
 // ArcoVue、VueUse 组件和指令自动引入解析器
 import {
   ArcoResolver,
+  NaiveUiResolver,
   VueUseComponentsResolver,
   VueUseDirectiveResolver
 } from 'unplugin-vue-components/resolvers'
@@ -100,7 +101,7 @@ export default defineConfig(({ mode }) => {
           filepath: './.eslintrc-auto-import.json', // Default `./.eslintrc-auto-import.json`
           globalsPropValue: true // Default `true`, (true | false | 'readonly' | 'readable' | 'writable' | 'writeable')
         },
-        resolvers: [ArcoResolver()]
+        resolvers: [ArcoResolver(), NaiveUiResolver()]
       }),
       Components({
         // imports 指定组件所在位置，默认为 src/components
@@ -110,6 +111,7 @@ export default defineConfig(({ mode }) => {
           ArcoResolver({
             sideEffect: true
           }),
+          NaiveUiResolver(),
           VueUseComponentsResolver(),
           VueUseDirectiveResolver(),
           IconsResolver({

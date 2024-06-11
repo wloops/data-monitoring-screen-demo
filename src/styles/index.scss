@@ -1,0 +1,21 @@
+// css 初始化
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+li {
+  list-style: none;
+}
+/* 声明字体*/
+@font-face {
+  font-family: 'electronicFont';
+  src: url(../assets/font/DS-DIGIT.TTF);
+}
+
+#app {
+  background: url(../assets/images/bg.jpg) no-repeat top center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  overflow-y: scroll;
+}

@@ -3,6 +3,7 @@
  */
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'
+import '@/styles/index.scss'
 import '@/styles/normalize.css'
 // 导入Unocss样式
 import 'uno.css'
